@@ -18,4 +18,24 @@ Flow Diagram
 ===============
 Spec File(cy.js) -------> describe blocks(test suites) ------> it blocks(test) 
 
+# Part 1:
+1. Frontend web automation testing tool.
+2. modern web application e.g. React js, angular js
+3. any appliaction which runs on browser
+4. java script
+5. doesn't use any selenium
+6. open source (test runner(locally installed) - free, dashboard - paid)
+7. Nodejs and comes with npm modules
+8. Who can use cypress (DEV & QA)
+9.   end to end test
+10.   integretion test
+11.   unit test
+12.   API testing
+13. Features: time travel, debuggablity, automatic waits(built-in waits), consistence results, screenshots & videos, cross browser testing- locally & remotely
+14. Limitations:
+15.  can't open window based or mobile application
+16.  limited support
+17.  javascript/typescript
+18.  reading/writing data into file is difficult
+
  
