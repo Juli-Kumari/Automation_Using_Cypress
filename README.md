@@ -1,6 +1,6 @@
 # Automation_Using_Cypress
 
-1.) download and install nodejs
+1.) download and install nodejs (node--version, npm --version)
 2.) VS Code
 3.) new folder open with VS code
 4.) npm -i init => create package.json
