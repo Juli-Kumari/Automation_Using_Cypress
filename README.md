@@ -5,7 +5,7 @@
 3.) new folder open with VS code
 4.) npm -i init => create package.json
 5.) install cypress => npm install cypress --save -dev
-6.) start cypress -> npx cypress open
+6.) start cypress -> npx cypress open OR node_modules/.bin/cypress open
 
 Run Script=>
 1. npx cypress open
