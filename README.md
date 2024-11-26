@@ -110,9 +110,44 @@ describe('Suite Name', function () {
 
 3. add "require('cypress-xpath')" inside support/e2e.js file
 
-# Part 5: Assertions (Validations)
+# Part 5: Cypress Assertions (Validations)
+1. Implicit Assertions (built-in Assertions)
+      should
+      and
 
+ eq
+ have.length
+ contain
+ exist
+ include
+ have.value
 
+2. Explicit Assertions -> custom assertion, not built-in assertion in cypress
+
+      expect -- BDD
+      assert -- TDD
+
+3. We can directly get the elements locator from the cypress INSPECT itself.
+  cy.get('.orangehrm-login-branding > img')
+
+# Part 6: Cypress folder structure
+
+cypress          ----> main cypress folder
+  downloads       ----> downloaded files
+  e2e                ----> Tests
+    File.cy.ts      ---->  test files
+  fixtures           ---->  Static Test Data
+  screenshots      ---->  Captured screenshots
+  support           ---->  Reusable scripts
+    commands.js     ---->  Custom commands/Overwrite existing commands
+    e2e.js          ----> Loads before tests
+videos                 ------> Videos
+node_modules           ----> Modules for cypress
+cypress.config.js      ----> CYpress configurations
+package-lock.json      ---->
+package.json            ----> Dependencies for cypress
+
+# Part 7: Interacting with Elements | Radio Buttons & Checkboxes
 
 
 
