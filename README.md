@@ -91,6 +91,27 @@ describe('Suite Name', function () {
 4. test suites -----> test cases ----> Test steps
    spec file (cy.js) --> describe blocks (test suites) ---> it blocks (test cases)
 
+# Part 4: Locators
+1. Css locator ---> bydefault support by cypress -->'cy.get(locator)' method
+2. Xpath locator --> used xpath plugin in cypress -->'cy.xpath(xpath locator)' method
+3. Used locator to identify the elements using 
+
+# NOTE:
+1. Once we run any spec, if we change any stpes inside the code then cypress RUNNER window directly run the particular spec when we clik on save. NO need to run the test again and again.
+
+-- To work with XPATH
+1. npm install -D cypress-xpath  ------> install xpath plugin 
+2. add reference inside the 'commands.js' file
+// Used all the cypress methods suggestions
+/// <reference types="cypress" />  
+
+// Used all the cypress-xpath methods suggestions
+/// <reference types="cypress-xpath" />
+
+3. add "require('cypress-xpath')" inside support/e2e.js file
+
+# Part 5: Assertions (Validations)
+
 
 
 
