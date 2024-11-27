@@ -149,6 +149,11 @@ package.json            ----> Dependencies for cypress
 
 # Part 7: Interacting with Elements | Radio Buttons & Checkboxes
 
+# Part 8: DropDowns
+
+1. have.value --> used for simple 'select' dropdown
+2. have.text  --> used for span dropdown
+
 
 
 
