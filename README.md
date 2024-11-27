@@ -154,6 +154,26 @@ package.json            ----> Dependencies for cypress
 1. have.value --> used for simple 'select' dropdown
 2. have.text  --> used for span dropdown
 
+# Part 9: Alerts
+1. by default cypress close the alerts window by using 'OK' button of alert window, but for any validation we need to write the code.
+
+  1. simple alert
+  2. confirm alert
+  3. Prompt alert
+  4. Authenticated alert
+
+# Part 10:  Handling Child Tabs
+1. Approach 1: removing target attribute to handles the tabs elements
+2. Approach 2: get the href attribute, the simply use visit() method
+   Limitation: the main domain should be same for Approah 2.
+3. go back to main tab  ----> cy.go('back')
+
+# Part 11: Handling iFrames
+
+        
+
+
+
 
 
 
