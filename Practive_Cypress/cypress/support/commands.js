@@ -29,3 +29,14 @@
 /// <reference types="cypress" />  
 // Used all the cypress-xpath methods suggestions
 /// <reference types="cypress-xpath" />
+
+// custom command -> to get iframe  -----> getIframe(iframe)
+Cypress.Commands.add('getIframe', (iframe)=>{
+   return cy.get(iframe)
+    .its('0.contentDocument.body') 
+      .should('be.visible')  
+      .then(cy.wrap) 
+})
+
+
+

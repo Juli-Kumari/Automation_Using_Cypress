@@ -170,6 +170,27 @@ package.json            ----> Dependencies for cypress
 
 # Part 11: Handling iFrames
 
+1. Appraoch 1: 
+     // get iframe locator
+     // since actual element is present inside the '#document
+     // get the document
+     // check document is visible or not
+     // wrap that element
+2. Appraoch 2: Using custom command
+3. Approach 3: using cypress-iframe plugin
+     npm install -D cypress-iframe
+     import 'cypress-iframe';
+
+1. {ctrl + a } => to select all the text
+
+# Part 12: Handling Tables
+1. beforeEach login scenario
+2. Check number of Rows & Columns
+3. Check cell data from specific Rows & Columns
+4. Read all the Rows & Columns data in the first page
+5. Pagination
+
+# Part 13: Handling Mouse
         
 
 
