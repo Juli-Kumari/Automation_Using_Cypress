@@ -191,7 +191,22 @@ package.json            ----> Dependencies for cypress
 5. Pagination
 
 # Part 13: Handling Mouse
+1. Mouse hover --> .trigger('mouseover')
+2. Right click --> .trigger('contextmenu')
+              ------> .rightclick()
+3. Double click  --> .trigger('dblclick')
+                ----> .dblclick()
+4. Drag & drop using plugin
+   ------> npm install --save-dev @4tw/cypress-drag-drop
+   ------> import '@4tw/cypress-drag-drop'
+    1. source & destination element
+    2. Forces Cypress to interact with the element, bypassing visibility checks. ->  { force: true }
+       ---> since the elements are hidden
+5. Scrolling page 
+  -----> .scrollIntoView() // scroll faster
+  -----> .scrollIntoView({duration:2000}) // scroll within 2 sec
         
+# Part 14: Handling File
 
 
 
