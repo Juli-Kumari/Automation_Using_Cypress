@@ -271,6 +271,74 @@ Tags
 
 # Part 18: Browser Navigation | go() & reload()
 
+1. cy.go('back')   
+2. cy.go('forward') 
+3. cy.go(-1) --------> back
+4. cy.go(1) --------> forward
+
+# Part 19: How To Capture Screenshots & Videos on Test
+
+NOTE: 
+1. Bydefault all the screenshot store inside 'screenshots' folder
+2. for failed TCs, cypress automatically capture the screenshots on failure scenario only ------->  Only when you execute from CLI
+
+npx cypress run --spec cypress/e2e/19_How\ To\ CaptureScreenshots\&Videos.cy.js
+
+3. Video recording is disabled by default on failure scenario only ------->  Only when you execute from CLI inside "cypress.config.js"
+
+  "video: true"
+
+4. If enabled, Cypress records a video for each spec file when running tests during cypress run. Videos are not recorded during cypress open.
+
+
+5. screenshot(fileName) method
+  --->cy.screenshot('homePage')
+cy.get("a[href='/key_presses']").screenshot('keyPressWord_sc') // get particular elements screenshort
+
+# Part 20: How To Generate HTML Reports|Headed & Headless mode execution
+
+1. install cypress-mochawesome-reporter
+    npm i --save-dev cypress-mochawesome-reporter
+2. Change cypress reporter & setup hooks
+
+Edit config file (cypress.config.js by default)
+
+const { defineConfig } = require('cypress');
+
+module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
+  e2e: {
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
+    },
+  },
+});
+
+3. Add to cypress/support/e2e.js
+
+import 'cypress-mochawesome-reporter/register';
+
+4.  run file ---> it will created cypress/reports/html/index.html
+   npx cypress run --spec cypress/e2e/19_CaptureScreenshots\&Videos.cy.js 
+
+# Part 21: Page Object Model Pattern in Cypress
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
