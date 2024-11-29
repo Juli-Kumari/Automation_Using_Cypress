@@ -208,6 +208,69 @@ package.json            ----> Dependencies for cypress
         
 # Part 14: Handling File
 
+1. plugin
+  ---> npm install --save-dev cypress-file-upload
+2. .attachFile('test.pdf') --> it's take file from the 'fixtures' folder ONLY.
+3. File upload - Rename  At run time----> 
+    .attachFile({filePath: 'test.pdf', fileName:  'MyFile.pdf'})
+4. File upload - Drag & Drop
+      .attachFile('test.pdf', {subjectType: 'drag-n-drop'})
+5. Multiple files upload
+      .attachFile(['test.pdf', 'test_01.pdf'])
+6. File upload - Shadow dom --> Dom contains another DOM.
+      cy.get(".smart-browse-input", {includeShadowDom: true}).attachFile('test_01.pdf')
+
+# Part 15: Hooks & Tags
+Hooks
+-------------
+1. before()  ---> runs only once before all
+2. after() ---> runs only once after all
+3. beforeEach() ---> runs each time before it() block
+4. afterEach() ---> runs each time after it() block
+
+Tags
+----------
+1. it.skip()
+2. it.only()
+
+# Part 16: Fixtures & Data Driven Testing (Using JSON Data)
+
+1. Direct access
+ Read fixture file data 'orangehrm.json' file
+       cy.fixture('orangehrm').then( (data)=>{
+       cy.get("input[name='username']").type(data.username)
+       })
+
+2. Access thorugh HOOKs for multiple it() blocks
+
+    let orangehrmDataJson;
+    before(()=>{
+        cy.fixture('orangehrm').then((data)=>{
+            orangehrmDataJson=data
+        })
+    })
+
+3. Data driven testing -> multiple sets of data -> create array of JSON
+
+    cy.fixture('orangehrm_ddt').then((data)=>{ // all orangehrm_ddt.json file data store in 'data'
+            cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+
+
+            data.forEach( (userdata)=>{  // get one by one data inside 'userdata'
+                cy.get("input[name='username']").type(userdata.username)
+            })
+    })
+
+# Part 17: How To Create Custom commands 
+
+  --> support/commands.js file path inside cypress
+
+1. create new command
+2. overwrite the command
+3. custom command for reusable method like LOGIN
+
+# Part 18: Browser Navigation | go() & reload()
+
 
 
 
