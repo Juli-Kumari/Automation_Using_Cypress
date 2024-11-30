@@ -43,15 +43,15 @@ Spec File(cy.js) -------> describe blocks(test suites) ------> it blocks(test)
 1. All test cases called here specification (spec) file.
 2. write spec inside e2e folder
 3. run 'npx cypress open' -> open the window & shows list down all the browsers (which is download in local system).
-   cypress
-    downloads folder
-    e2e folder
-    fixtures
-    support
-   node_modules
-   cypress.config.js
-   package-loack.json
-   package.json
+   1. cypress
+    2. downloads folder
+    3. e2e folder
+    4. fixtures
+    5. support
+  6. node_modules
+  7. cypress.config.js
+  8. package-loack.json
+  9. package.json
 
 4. create new file inside cypress/e2e/ "MyFirstCypressTest.cy.js".
 5. Extension should be ".cy.js"
