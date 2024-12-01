@@ -50,7 +50,7 @@ Spec File(cy.js) -------> describe blocks(test suites) ------> it blocks(test)
     5. support
   6. node_modules
   7. cypress.config.js
-  8. package-loack.json
+  8. package-lock.json
   9. package.json
 
 4. create new file inside cypress/e2e/ "MyFirstCypressTest.cy.js".
@@ -85,11 +85,11 @@ describe('Suite Name', function () {
    1. npx cypress open   -->  select the browser -> click on the file to run
    2. npx cypress run    --> bydefault tests will run on headless mode with ELECTRON browser
    3. npx cypress run --headed  --> run on without headless mode
-   4. npx cypress run --spec cypress/e2e/MyFirstTest.cy.js  -->  run only one file form     command line
+   4. npx cypress run --spec cypress/e2e/MyFirstTest.cy.js  -->  run only one file from     command line
    5. npx cypress run --browser chrome   --> run tests on CHROME browser
 
 4. test suites -----> test cases ----> Test steps
-   spec file (cy.js) --> describe blocks (test suites) ---> it blocks (test cases)
+5. spec file (cy.js) --> describe blocks (test suites) ---> it blocks (test cases)
 
 # Part 4: Locators
 1. Css locator ---> bydefault support by cypress -->'cy.get(locator)' method
@@ -97,7 +97,7 @@ describe('Suite Name', function () {
 3. Used locator to identify the elements using 
 
 # NOTE:
-1. Once we run any spec, if we change any stpes inside the code then cypress RUNNER window directly run the particular spec when we clik on save. NO need to run the test again and again.
+1. Once we run any spec, if we change any steps inside the code then cypress RUNNER window directly run the particular spec when we clik on save. NO need to run the test again and again.
 
 -- To work with XPATH
 1. npm install -D cypress-xpath  ------> install xpath plugin 
@@ -111,9 +111,9 @@ describe('Suite Name', function () {
 3. add "require('cypress-xpath')" inside support/e2e.js file
 
 # Part 5: Cypress Assertions (Validations)
-1. Implicit Assertions (built-in Assertions)
-      should
-      and
+1. Implicit Assertions (built-in Assertions) -->
+    should
+    and
 
  eq
  have.length
