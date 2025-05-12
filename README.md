@@ -148,6 +148,10 @@ package-lock.json      ---->
 package.json            ----> Dependencies for cypress
 
 # Part 7: Interacting with Elements | Radio Buttons & Checkboxes
+.check()
+.uncheck()
+.first().check().should('be.checked')
+.last().check().should('be.checked')
 
 # Part 8: DropDowns
 
