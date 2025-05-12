@@ -47,7 +47,7 @@ Spec File(cy.js) -------> describe blocks(test suites) ------> it blocks(test)
    1. `downloads folder`
    2. `e2e folder`
    3. `fixtures`
-   4. `support`
+   4. `support` -> contains 2 files -> commands.js , e2e.js
 2. `node_modules`
 3. `cypress.config.js`
 4. `package-lock.json`
