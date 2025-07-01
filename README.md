@@ -132,20 +132,20 @@ describe('Suite Name', function () {
 
 # Part 6: Cypress folder structure
 
-cypress          ----> main cypress folder
-  downloads       ----> downloaded files
-  e2e                ----> Tests
-    File.cy.ts      ---->  test files
-  fixtures           ---->  Static Test Data
-  screenshots      ---->  Captured screenshots
-  support           ---->  Reusable scripts
-    commands.js     ---->  Custom commands/Overwrite existing commands
-    e2e.js          ----> Loads before tests
-videos                 ------> Videos
-node_modules           ----> Modules for cypress
-cypress.config.js      ----> CYpress configurations
-package-lock.json      ---->
-package.json            ----> Dependencies for cypress
+cypress          ----> main cypress folder,
+  downloads       ----> downloaded files,
+  e2e                ----> Tests,
+    File.cy.ts      ---->  test files,
+  fixtures           ---->  Static Test Data,
+  screenshots      ---->  Captured screenshots,
+  support           ---->  Reusable scripts,
+    commands.js     ---->  Custom commands/Overwrite existing commands,
+    e2e.js          ----> Loads before tests,
+videos                 ------> Videos,
+node_modules           ----> Modules for cypress,
+cypress.config.js      ----> CYpress configurations,
+package-lock.json      ----> ,
+package.json            ----> Dependencies for cypress,
 
 # Part 7: Interacting with Elements | Radio Buttons & Checkboxes
 .check()
