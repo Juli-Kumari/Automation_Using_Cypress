@@ -169,7 +169,7 @@ package.json            ----> Dependencies for cypress,
 # Part 10:  Handling Child Tabs
 1. Approach 1: removing target attribute to handles the tabs elements
 2. Approach 2: get the href attribute, the simply use visit() method
-   Limitation: the main domain should be same for Approah 2.
+                                        ,   Limitation: the main domain should be same for Approah 2.
 3. go back to main tab  ----> cy.go('back')
 
 # Part 11: Handling iFrames
